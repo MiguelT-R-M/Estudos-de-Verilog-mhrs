@@ -1,5 +1,5 @@
 $date
-	Thu May  7 13:40:19 2026
+	Thu May  7 15:16:51 2026
 $end
 $version
 	Icarus Verilog
@@ -8,18 +8,18 @@ $timescale
 	1ps
 $end
 $scope module ula_tb $end
-$var wire 4 ! result [3:0] $end
+$var wire 6 ! result [5:0] $end
 $var wire 1 " Zero $end
-$var reg 4 # A [3:0] $end
-$var reg 4 $ B [3:0] $end
+$var reg 5 # A [4:0] $end
+$var reg 5 $ B [4:0] $end
 $var reg 3 % Seletor [2:0] $end
 $scope module dut $end
-$var wire 4 & A [3:0] $end
-$var wire 4 ' B [3:0] $end
-$var wire 3 ( Seletor [2:0] $end
-$var wire 4 ) useless [3:0] $end
+$var wire 5 & A [4:0] $end
+$var wire 5 ' B [4:0] $end
+$var wire 4 ( Dontcare [3:0] $end
+$var wire 3 ) Seletor [2:0] $end
 $var reg 1 " Zero $end
-$var reg 4 * result [3:0] $end
+$var reg 6 * result [5:0] $end
 $upscope $end
 $upscope $end
 $scope module ula_tb $end
@@ -32,22 +32,24 @@ $dumpall
 $end
 #0
 $dumpvars
-b1001 *
-bz )
-b0 (
-b1011 '
-b1101 &
+b1110 *
+b0 )
+bz (
+b111 '
+b111 &
 b0 %
-b1011 $
-b1101 #
+b111 $
+b111 #
 0"
-b1001 !
+b1110 !
 $end
 #10000
-b1101 !
-b1101 *
+b10100 !
+b10100 *
 b1 %
-b1 (
-b0 $
-b0 '
+b1 )
+b10001 $
+b10001 '
+b101 #
+b101 &
 #20000
