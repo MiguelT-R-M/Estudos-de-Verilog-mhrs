@@ -1,0 +1,5 @@
+compilar = iverilog -o arquivo.vvp test.v testBench.v
+
+simular = vpp arquivo.vvp
+
+ver a simulação = gtkwave simulation.vcd

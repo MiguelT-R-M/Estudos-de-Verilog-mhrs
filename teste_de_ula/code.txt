@@ -1,0 +1,2 @@
+iverilog -o executar.vvp teste.v testbench.v
+vvp executar.vvp
